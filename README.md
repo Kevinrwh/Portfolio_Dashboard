@@ -1,18 +1,60 @@
-# Crypto Return Calculator
+# Portfolio Dashboard
 
-This is an [Observable Framework](https://observablehq.com/framework/) app. To install the required dependencies, run:
+A crypto portfolio dashboard built with [Observable Framework](https://observablehq.com/framework/) that tracks cryptocurrency investments and calculates returns using real-time data from CoinGecko.
 
+## Features
+
+- Real-time cryptocurrency price tracking via CoinGecko Pro API
+- Portfolio performance analysis and return calculations
+- Interactive data visualizations
+- Modern, responsive web interface
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18 or higher
+- Yarn package manager
+- CoinGecko Pro API key (get one at [CoinGecko API Pricing](https://www.coingecko.com/en/api/pricing))
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone <your-repo-url>
+cd Portfolio_Dashboard
 ```
+
+2. Install dependencies:
+```bash
 yarn install
 ```
 
-Then, to start the local preview server, run:
+3. Set up your API key (choose one method):
 
+**Method 1: Environment Variable (Recommended)**
+```bash
+# Copy the example environment file
+cp .env.example .env
+
+# Edit .env and add your CoinGecko Pro API key
+# CG_PRO_KEY=your_actual_api_key_here
 ```
+
+**Method 2: Local Config File**
+```bash
+# Create the config directory
+mkdir -p ~/.config/portfolio-dashboard
+
+# Create the API keys file
+echo '{"key": "your_actual_api_key_here"}' > ~/.config/portfolio-dashboard/api-keys.json
+```
+
+4. Start the development server:
+```bash
 yarn dev
 ```
 
-Then visit <http://localhost:3000> to preview your app.
+5. Visit <http://localhost:3000> to view your portfolio dashboard.
 
 For more, see <https://observablehq.com/framework/getting-started>.
 

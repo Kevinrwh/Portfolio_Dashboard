@@ -1,4 +1,40 @@
-.DS_Store
-/dist/
+# Dependencies
 node_modules/
 yarn-error.log
+
+# Build outputs
+/dist/
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# API Keys and sensitive files
+**/API-keys
+**/api-keys.json
+**/secrets.json
+~/.config/portfolio-dashboard/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Observable Framework cache
+src/.observablehq/cache/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
